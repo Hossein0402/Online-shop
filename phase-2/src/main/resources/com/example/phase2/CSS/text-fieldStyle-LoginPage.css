@@ -1,0 +1,37 @@
+.text-field {
+    -fx-max-width: 190px;
+    -fx-height: 45px;
+    -fx-width: 100%;
+    -fx-outline: none;
+    -fx-font-size: 16px;
+    -fx-border-radius: 5px;
+    -fx-padding-left: 15px;
+    -fx-border:  solid #ccc;
+    -fx-border-bottom-width: 2px;
+    -fx-transition: all 0.3s ease;
+    -fx-position: relative;
+}
+
+.text-field:focused {
+    -fx-border-color: #00ff2a;
+    -fx-color: #00ff2a;
+    -fx-box-shadow:  inset 10px 10px 10px #00ff2a;
+}
+
+.text-field: hover {
+    -fx-border-color: #004d65;
+    -fx-color: #004d65;
+}
+
+.text {
+    -fx-margin-top: 10px;
+    -fx-color: black;
+}
+#next_button:hover,focused {
+  -fx-translate-x: 5px;
+      -fx-translate-y: -5px;
+}
+#exit_button:hover,focused {
+  -fx-translate-x: 5px;
+      -fx-translate-y: -5px;
+}

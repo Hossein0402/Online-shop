@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnchorPane_root" prefHeight="465.0" prefWidth="495.0" stylesheets="@CSS/text-fieldStyle-LoginPage.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.phase2.LogInPageController">
+   <children>
+      <ImageView fx:id="ImageView_root" fitHeight="700.0" fitWidth="900.0" layoutX="-1.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <image>
+            <Image url="@image/image1.png" />
+         </image>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="265.0" prefHeight="85.0" prefWidth="201.0" text="Log In" textFill="#004d65">
+         <font>
+            <Font name="Ink Free" size="53.0" />
+         </font>
+      </Label>
+      <TextField id="UserName" fx:id="UserName_ID" blendMode="DARKEN" cache="true" focusTraversable="false" layoutX="265.0" layoutY="301.0" maxWidth="201.0" minWidth="-Infinity" prefHeight="35.0" prefWidth="201.0" promptText="Username" stylesheets="@CSS/text-fieldStyle-LoginPage.css">
+         <effect>
+            <DropShadow />
+         </effect></TextField>
+      <ImageView id="exit_button" accessibleRole="BUTTON" fitHeight="53.0" fitWidth="78.0" layoutX="376.0" layoutY="420.0" onMouseClicked="#exitClicked" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand; visibility: true;" styleClass="exit_button">
+         <image>
+            <Image url="@image/iconKhroogi.png" />
+         </image>
+         <effect>
+            <DropShadow />
+         </effect>
+      </ImageView>
+      <ImageView id="next_button" accessibleRole="BUTTON" fitHeight="96.0" fitWidth="53.0" layoutX="422.0" layoutY="420.0" onMouseClicked="#logInClicked" pickOnBounds="true" preserveRatio="true" style="-fx-cursor: hand;">
+         <image>
+            <Image url="@image/iconVroodi.png" />
+         </image>
+         <effect>
+            <InnerShadow />
+         </effect>
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+      </ImageView>
+      <PasswordField fx:id="Password_ID" blendMode="DARKEN" focusTraversable="false" layoutX="265.0" layoutY="350.0" maxWidth="201.0" minWidth="-Infinity" prefHeight="35.0" prefWidth="201.0" promptText="Password" stylesheets="@CSS/text-fieldStyle-LoginPage.css">
+         <effect>
+            <DropShadow />
+         </effect>
+      </PasswordField>
+   </children>
+</AnchorPane>

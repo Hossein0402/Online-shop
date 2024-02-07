@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane prefHeight="800.0" prefWidth="800.0" stylesheets="@CSS/StyleButton.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.phase2.HelloController">
+    <children>
+        <ImageView fitHeight="800.0" fitWidth="800.0" layoutY="-4.0" pickOnBounds="true">
+            <viewport>
+                <Rectangle2D />
+            </viewport>
+            <image>
+                <Image url="@image/poooyakharkhoooonjahani.png" />
+            </image>
+        </ImageView>
+        <Label alignment="CENTER" layoutX="307.0" layoutY="241.0" prefHeight="45.0" prefWidth="187.0" text="WELCOME" textFill="#ba4523">
+            <font>
+                <Font name="Bell MT" size="22.0" />
+            </font>
+        </Label>
+        <Button cancelButton="true" defaultButton="true" layoutX="300.0" layoutY="308.0" mnemonicParsing="false" onAction="#User_Page_Action" prefHeight="45.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-color: white; -fx-border-radius: 20;" text="USER" textFill="#03000a">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+        <Button layoutX="300.0" layoutY="379.0" mnemonicParsing="false" onAction="#AdminPage" prefHeight="45.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-color: white; -fx-border-radius: 20;" text="ADMIN" textFill="#280202">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+        <Button layoutX="300.0" layoutY="453.0" mnemonicParsing="false" prefHeight="61.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-color: white; -fx-border-radius: 20;" text="PRODUCTS" textFill="#280202">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+        <Button fx:id="registering_ID" layoutX="300.0" layoutY="527.0" mnemonicParsing="false" onAction="#registeringUser" prefHeight="61.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-color: white; -fx-border-radius: 20;" text="REGISTERING" textFill="#280202">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font></Button>
+        <Button fx:id="exit_ID" cancelButton="true" layoutX="300.0" layoutY="655.0" mnemonicParsing="false" onAction="#exitKey" prefHeight="61.0" prefWidth="200.0" style="-fx-background-color: white; -fx-background-radius: 20; -fx-border-color: white; -fx-border-radius: 20;" text="EXIT" textFill="#ee0000">
+            <font>
+                <Font name="Bodoni MT Condensed Bold Italic" size="90.0" />
+            </font>
+        </Button>
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="31.0" layoutY="149.0" pickOnBounds="true" preserveRatio="true" />
+    </children>
+</Pane>
